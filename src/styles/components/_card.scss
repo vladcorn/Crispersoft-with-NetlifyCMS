@@ -1,0 +1,165 @@
+.card {
+    display: flex;
+    flex-direction: column;
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-body {
+        flex: 1 1 auto;
+    }
+
+    .card-image {
+        padding-top: $layout-spacing-lg;
+
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+}
+
+
+.portfolio-card {
+    position: relative;
+
+    .card-image {
+        flex: 2;
+
+        img {
+            min-height: 210px;
+            min-width: 280px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .slide-counter {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .card-title {
+        .title {
+            text-align: left;
+            margin-top: 20px;
+
+            .text-stroke {
+                display: block;
+            }
+        }
+    }
+
+    .card-content {
+        flex: 1;
+        min-height: 250px;
+        padding-right: 10px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .card-content {
+            width: 100%;
+
+            order: -1;
+
+            margin-top: auto;
+
+            padding-right: 40px;
+
+        }
+    }
+}
+
+.card-team {
+    width: 60vw;
+    width: 100%;
+    max-width: 450px;
+    padding: 10px;
+
+
+    text-align: center;
+
+    .card-title {
+        margin: 20px 0;
+
+        .card-subtitle {
+            text-transform: uppercase;
+            color: $secondary-color;
+            font-size: 12px;
+            letter-spacing: 0.1rem;
+        }
+    }
+
+    .card-body .text {
+        margin: 0;
+    }
+
+    .card-image {
+        img {
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: 20px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        max-width: 500px;
+    }
+}
+
+
+.card-blog {
+    padding: 1.3rem 0;
+
+
+    .card-image {
+        overflow: hidden;
+
+        img {
+            transform: scale(1);
+            transition: transform 0.4s ease-in-out;
+        }
+    }
+
+    .card-header {
+        padding: 1.1rem 0;
+
+
+    }
+
+    .card-date {
+        display: block;
+        margin-top: 1.1rem;
+    }
+
+    &:hover,
+    &:active {
+        .card-image img {
+            transform: scale(1.2);
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        max-width: 500px;
+
+        .card-header {
+            h2 {
+                font-size: 1.5rem;
+                height: 58px;
+                overflow: hidden;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {
+        max-width: 600px;
+    }
+}

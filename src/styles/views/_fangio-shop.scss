@@ -1,0 +1,265 @@
+[data-page="fangio-shop"] {
+    .project-head-section {
+        background-image: url("~@images/fangio-shop/fangioShop-bg-1-xl.jpg");
+    }
+
+    .divider-section {
+        background-image: url("~@images/fangio-shop/fangioShop-bg-2-xl.jpg")
+    }
+
+    .gallery {
+        margin: 50px 0;
+        display: flex;
+        flex-direction: column;
+
+        .gallery-item {
+            width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .card-wrapper {
+        width: 100%;
+        position: relative;
+
+        .card-2 {
+            margin-left: auto;
+        }
+    }
+
+    .card {
+        position: relative;
+
+        .card-image img {
+            position: absolute;
+            height: 100%;
+            top: 0;
+        }
+
+        .card-content {
+            position: absolute;
+            width: 200px;
+
+            top: 50%;
+
+
+            transform: translateY(-50%);
+
+            .text {
+                margin-bottom: 0;
+            }
+        }
+
+        .card-decoration {
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            .text-wrapper {
+                opacity: 0.4;
+
+                span {
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    .card-1 {
+        width: 300px;
+        height: 200px;
+
+        .card-image {
+            height: 200px;
+
+            img {
+                left: 0
+            }
+        }
+
+        .card-content {
+            right: 0;
+        }
+    }
+
+    .card-2 {
+        width: 260px;
+        height: 300px;
+
+        .card-image {
+            height: 300px;
+
+            img {
+                right: 0;
+            }
+        }
+
+        .card-content {
+            width: 160px;
+            left: 0;
+            text-align: center;
+        }
+    }
+
+    .card-3 {
+        height: 270px;
+        width: 300px;
+
+        .card-image {
+            height: 270px;
+
+            img {
+                left: 30px;
+            }
+        }
+
+        .card-content {
+            top: 10px;
+            left: -30px;
+
+            width: 60px;
+
+            transform: rotate(-90deg);
+
+            .text {
+                margin: 0;
+            }
+
+        }
+    }
+
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {
+        .gallery {
+            flex-flow: row wrap;
+            justify-content: space-between;
+
+            .gallery-item {
+                width: 50%;
+
+                &:not(:last-child) {
+                    margin-bottom: 60px;
+                }
+
+            }
+        }
+
+        .card-1 {
+            height: 270px;
+            width: 350px;
+
+            .card-image {
+                height: 270px;
+            }
+        }
+
+        .gallery-item-2 {
+            position: relative;
+
+            height: 300px;
+
+            .card-wrapper {
+                position: absolute;
+                top: 100px;
+            }
+        }
+
+        .card-2 {
+            width: 300px;
+
+            .card-image {
+                height: 312px;
+            }
+
+            .card-content {
+                left: 130px;
+                top: 420px;
+            }
+        }
+
+        .card-3 {
+            margin-left: auto;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .gallery {
+            .gallery-item {
+                &:not(:last-child) {
+                    margin-bottom: 100px;
+                }
+            }
+        }
+
+        .card-1 {
+            height: 380px;
+            width: 420px;
+        }
+
+        .gallery-item-2 {
+            .card-wrapper {
+                top: 120px;
+
+            }
+        }
+
+        .card-2 {
+            width: 300px;
+            height: 439px;
+
+            .card-content {
+                left: 70px;
+                top: 570px;
+
+                width: 200px;
+            }
+        }
+
+        .card-3 {
+            height: 400px;
+            width: 375px;
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {
+        .gallery {
+            .gallery-item {
+                &:not(:last-child) {
+                    margin-bottom: 150px;
+                }
+            }
+        }
+
+        .card-1 {
+            height: 460px;
+            width: 500px;
+        }
+
+        .gallery-item-2 {
+            .card-wrapper {
+                top: 150px;
+            }
+        }
+
+        .card-2 {
+            width: 300px;
+            height: 532px;
+
+            .card-content {
+                left: 30px;
+                top: 670px;
+
+                width: 250px;
+            }
+        }
+
+        .card-3 {
+            height: 480px;
+            width: 450px;
+        }
+    }
+}

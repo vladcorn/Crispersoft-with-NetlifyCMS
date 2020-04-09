@@ -1,0 +1,40 @@
+[data-page="likimap"] {
+    .project-head-section {
+        background-image: url("~@images/likimap/likimap-bg-1.jpg");
+    }
+
+    .divider-section {
+        background-image: url("~@images/likimap/likimap-bg-2.jpg")
+    }
+
+    .list-card {
+        display: flex;
+        flex-direction: column;
+        max-width: 1100px;
+
+        margin: 20px auto 20px;
+
+        >li {
+            margin: 0 auto;
+        }
+
+        .card {
+            max-width: 360px;
+        }
+
+        @include media-breakpoint-up(md) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 20px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin: 60px auto 60px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin: 100px auto 100px;
+        }
+    }
+}

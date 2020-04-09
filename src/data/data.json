@@ -1,0 +1,58 @@
+{
+  "team": [
+    {
+      "name": "Pavlo",
+      "position": "Head Project Manager",
+      "image": "../assets/images/team/Pasha.jpg",
+      "description": "God-blessed Project Manager with the softest skills you ever saw. He will gently take your hand and walk with you all the path from the very beginning of your project to it delivery. Working with this handsome man is a pure pleasure. Take a shot!"
+    },
+    {
+      "name": "Rick",
+      "position": "Chief Operating Officer",
+      "image": "../assets/images/team/Sergey.jpg",
+      "description": "The Captain Price in the mission of successful and well-timed project delivery. This man always stands guard selflessly the Client's interests. If Rick is in deal, You ought to keep calm - he feels the pulse of the developer's team every second up to the moment when last bit of source code won't be in your hands."
+    },
+    {
+      "name": "Milena",
+      "position": "Business Analyst",
+      "image": "../assets/images/team/Milena.jpg",
+      "description": "Looking for the new approach? Tired from cliches and typical standarts? Here you go! Our Business Analyst and Developer will take care about every single aspect of your business. Never knew that your project could be run any other way? Here you go! Our shining star - Milena."
+    },
+    {
+      "name": "Dmitriy",
+      "position": "Chief Information Officer",
+      "image": "../assets/images/team/Dmitriy.jpg",
+      "description": "This rockstar is obsessed with searching, ordering and managing the information flow. Concerning about need to hunt down any database or man (without breaking the GDPR law)? Stop right there. Take a deep breath. CIA, DIA, FBI, MI6, Mossad wanted to hire this guy but he sent them to hell and now he watches over CRISPERSOFT."
+    },
+    {
+      "name": "Andrey",
+      "position": "UI/UX Designer",
+      "image": "../assets/images/team/Andrey.jpg",
+      "description": "Powerful UI/UX expert. Working with the speed of light, Andrey is capable to provide you with different visions of your product. No matter how uncertain were your requirements. He will do exactly what you want."
+    },
+    {
+      "name": "Alina",
+      "position": "Engage Manager",
+      "image": "../assets/images/team/Alina.jpg",
+      "description": "A killer composition of beauty and professional experience. Working on the position of Engage Manager Alina tenderly leads her customers from their Ideas to successfully ready-made projects."
+    },
+    {
+      "name": "Slava",
+      "position": "Senior Back-End Developer",
+      "image": "../assets/images/team/Slava.jpg",
+      "description": "Big Java Boss. Don’t try to impress him with back-end magic. He was there when it was written. Complex high-end solutions powered by Java - probably not the main reason why are you here. But in fact it will make your life way easier."
+    },
+    {
+      "name": "Alex",
+      "position": "DevOps",
+      "image": "../assets/images/team/Aleksey.jpg",
+      "description": "Godlike DevOps is right over here. Alex  is a magical person who can raise a fallen server, fix a bug, because of which it crashes and roll out an update. He also  can write scripts the way that next time script will do all work by itself and send a soothing SMS."
+    },
+    {
+      "name": "Max",
+      "position": "Middle Front-End Developer",
+      "image": "../assets/images/team/Maxim.jpg",
+      "description": "Boom. Need the best front-end developer on your project? So do we. But we have Max. Fast. Strong. Robust. Max. If you get lucky to meet him on your project - congratulations! Everything is fine now."
+    }
+  ]
+}

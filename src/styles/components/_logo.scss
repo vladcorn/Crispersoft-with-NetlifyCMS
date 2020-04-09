@@ -1,0 +1,26 @@
+.logo {
+    color: #fff;
+
+    &::before {
+        content: '\e801';
+        display: inline-block;
+        font-family: 'fontello';
+        font-size: 1.5rem;
+    }
+
+    span {
+        display: none;
+        font-family: $secondary-font-family;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-left: $unit-2;
+        text-transform: uppercase;
+        line-height: 19px;
+    }
+
+    @include media-breakpoint-up(md) {
+        span {
+            display: inline-block;
+        }
+    }
+}

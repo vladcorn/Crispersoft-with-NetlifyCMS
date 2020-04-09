@@ -1,0 +1,46 @@
+.main-menu {
+    display: flex;
+    align-items: center;
+
+    .actions {
+        display: none;
+
+        align-items: center;
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+        }
+    }
+
+    .hamburger {
+        margin-left: 40px;
+
+    }
+
+    .btn-contacts {
+        margin-left: 70px;
+    }
+
+
+
+}
+
+.menu {
+
+    display: flex;
+
+    align-items: center;
+
+    .name {
+        display: none;
+        margin-right: $unit-4;
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        .name {
+            display: flex;
+        }
+    }
+}

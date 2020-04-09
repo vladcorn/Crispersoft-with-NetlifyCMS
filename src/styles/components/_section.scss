@@ -1,0 +1,81 @@
+.section {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    // position: relative;
+
+    .section-header,
+    .section-body,
+    .section-footer {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .section-body {
+        flex: 1;
+    }
+
+    &.center,
+    .section-body.center {
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.fixed,
+    &>*.fixed {
+        padding-right: 4%;
+        padding-left: 4%;
+        max-width: 1900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &.fullscreen {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    &.padding-vertical {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        @include media-breakpoint-up(sm) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        @include media-breakpoint-up(md) {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    }
+
+    &.only {
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    &.only.middle {
+        .section-body {
+            justify-content: center;
+        }
+    }
+}

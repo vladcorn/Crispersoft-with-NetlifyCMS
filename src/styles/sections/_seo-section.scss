@@ -1,0 +1,25 @@
+.seo-section {
+    .text-description {
+        max-width: none;
+        overflow: hidden;
+
+        >span {
+            display: block;
+            overflow: hidden;
+        }
+    }
+
+    .link-wrapper {
+        width: 100%;
+
+        a {
+            cursor: pointer;
+        }
+    }
+
+    &.background-line {
+        &::after {
+            background-position: 100% 10%;
+        }
+    }
+}

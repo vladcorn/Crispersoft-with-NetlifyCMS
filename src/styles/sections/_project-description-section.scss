@@ -1,0 +1,42 @@
+.project-description-section {
+    padding: 30px 0;
+
+    .project-description {
+        padding: 30px 0;
+    }
+
+    .link {
+        margin: 20px 0;
+        border-bottom: 1px solid $secondary-color;
+    }
+
+    .section-body {
+        max-width: 1100px;
+    }
+
+    .project-img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .list-features {
+        list-style-type: disc;
+        margin-left: 40px;
+    }
+
+    @include media-breakpoint-up(md) {
+        margin: 40px 0;
+
+        .link {
+            margin: 30px 0;
+        }
+
+        .project-description {
+            padding: 40px 0;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin: 60px 0;
+    }
+}

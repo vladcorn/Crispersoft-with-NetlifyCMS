@@ -1,0 +1,53 @@
+.project-head-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .section-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-head {
+        margin: 0 auto;
+        text-align: center;
+
+        .project-title {
+            text-align: center;
+
+
+            span {
+
+                display: block;
+            }
+        }
+
+        .project-logo {
+            margin: 0 auto 1rem;
+            height: 50px;
+            width: 100%;
+
+            svg,
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .project-head {
+            .project-logo {
+                height: 90px;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {
+        .project-head {
+            .project-logo {
+                height: 120px;
+            }
+        }
+    }
+}

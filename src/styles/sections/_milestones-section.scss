@@ -1,0 +1,74 @@
+.milestones-section {}
+
+.list-milestones {
+    display: flex;
+    flex-direction: column;
+
+    .milestone-row {
+        padding: 15px 0;
+    }
+
+    .milestone-content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .milestone-count {
+            min-width: 120px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .milestone-row {
+            padding: 30px 0;
+        }
+
+        .milestone-count {
+            span {
+                font-size: 120px;
+            }
+        }
+
+        .milestone-row-2 {
+            padding-left: 20%;
+        }
+
+        .milestone-row-3 {
+            padding-left: 40%;
+        }
+
+        .milestone-row-4 {
+            padding-left: 65%;
+        }
+    }
+
+
+}
+
+.milestone-count {
+    span {
+        display: block;
+
+        margin-left: auto;
+
+        font-weight: 900;
+        font-size: 4rem;
+        line-height: 59px;
+      
+        text-align: right;
+        -webkit-text-stroke: 0.8px #fff;
+
+        opacity: 0.4;
+    }
+}
+
+.milestone-description {
+    padding-left: 30px;
+
+    span {
+        display: block;
+        font-size: 1rem;
+        opacity: 0.8;
+        text-transform: uppercase;
+    }
+}

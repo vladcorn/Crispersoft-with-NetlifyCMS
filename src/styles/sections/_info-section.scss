@@ -1,0 +1,39 @@
+.info-section {
+
+    .section-body {
+        display: flex;
+        flex-flow: column nowrap;
+
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+
+    .image-wrapper {
+        width: 100%;
+        max-width: 850px;
+
+        @include media-breakpoint-up(md) {
+            flex: 1;
+        }
+    }
+
+    .info {
+        margin-top: 20px;
+
+        @include media-breakpoint-up(md) {
+            flex: 1;
+            margin-top: 0;
+            margin-left: 100px
+        }
+    }
+
+    &.background-line {
+        &::after {
+            background-position: 100% 90%;
+        }
+    }
+}

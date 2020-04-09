@@ -1,0 +1,66 @@
+.pagination {
+    width: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+
+    .pagination-counter {
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    .pagination-prev,
+    .pagination-next {
+        padding: 0.5rem;
+
+        i {
+            font-size: 1.5rem;
+            color: #fff;
+            opacity: 0.5;
+        }
+    }
+}
+
+
+.pagination-simple {
+    height: 80px;
+
+    position: relative;
+
+    width: 100%;
+
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 0;
+
+        background-color: #C4C4C4;
+        width: 2px;
+        height: 100%;
+
+    }
+
+    .link {
+        font-family: 'Proxima Nova';
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #fff;
+        height: 100%;
+        padding: 15px;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 200px;
+    }
+}

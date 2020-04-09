@@ -1,0 +1,90 @@
+.services {
+    display: flex;
+    flex-flow: column nowrap;
+
+    margin-top: 40px;
+
+    @include media-breakpoint-up(md) {
+        margin-top: 50px;
+        margin-left: 135px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        margin-top: 70px
+    }
+
+    .service {
+
+        @include media-breakpoint-up(lg) {
+            margin-right: 140px;
+        }
+
+
+        @include media-breakpoint-up(xxl) {
+            // margin-top: 200px;
+        }
+    }
+
+    .service-title {
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin-right: 20px;
+            background-color: $secondary-color;
+        }
+
+
+        @include media-breakpoint-up(md) {
+            &::before {
+                margin-right: 50px;
+            }
+        }
+
+        @include media-breakpoint-up(xxl) {
+            &::before {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+    }
+}
+
+.service-list {
+    margin-top: 20px;
+    margin-left: 35px;
+
+
+    @include media-breakpoint-up(md) {
+        margin-left: 63px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-top: 35px;
+    }
+
+    .service-item {
+        text-transform: uppercase;
+
+        &.text {
+            margin: 10px 0;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,40 @@
+[data-page="house-of-borel"] {
+    .project-head-section {
+        background-image: url("~@images/house-of-borel/houseOfBorel-bg-1-xl.jpg");
+
+        .project-logo {
+            width: 273px;
+            height: 81px;
+        }
+
+    }
+
+    .gallery {
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        margin-top: 50px;
+
+        .gallery-item {
+            margin: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .gallery-item-3 {
+            margin-left: 20px;
+        }
+
+        .gallery-row {
+            display: flex;
+        }
+
+    }
+}

@@ -1,0 +1,21 @@
+.need-project-section {
+
+    .section-body {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            line-height: 120%;
+
+        }
+
+        .text {
+            text-align: center;
+            margin-top: 0;
+        }
+    }
+}

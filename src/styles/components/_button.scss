@@ -1,0 +1,148 @@
+.btn {
+    display: block;
+
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+    color: inherit;
+    font: inherit;
+
+    line-height: normal;
+
+    -webkit-appearance: none;
+
+    cursor: pointer;
+}
+
+.btn-contacts {
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: $border-radius;
+
+    width: 180px;
+    padding: 5px 0;
+    // height: 30px;
+    background-color: $secondary-color;
+    color: #202020;
+}
+
+.btn-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 130px;
+    height: 130px;
+
+    border: 1px solid $secondary-color;
+    border-radius: 50%;
+
+    transition: all .3s ease;
+
+    background-color: $secondary-color;
+
+    animation: spin 10s infinite linear;
+
+    span {
+        display: block;
+
+        font-size: 0.9rem;
+        text-align: center;
+        letter-spacing: 0.2rem;
+        padding-left: 0.2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        white-space: nowrap;
+
+        transition: all .3s ease;
+    }
+
+    &:hover,
+    &:active {
+        border: none;
+        cursor: none;
+
+        background-color: $secondary-color;
+
+        span {
+            color: #fff;
+        }
+    }
+
+    @include media-breakpoint-up(sm) {
+        width: 150px;
+        height: 150px;
+    }
+
+    @include media-breakpoint-up(md) {
+        width: 160px;
+        height: 160px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        background: none;
+        border: 1px solid $secondary-color;
+
+        span {
+            color: $secondary-color;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        &:hover,
+        &:active {
+            span {
+                letter-spacing: 0.1rem;
+                padding-left: 0.1rem;
+                font-size: 0.8rem;
+            }
+        }
+
+    }
+}
+
+.btn-circle-small {
+    width: 100px;
+    height: 100px;
+
+    span {
+        font-size: 1rem;
+    }
+
+
+    @include media-breakpoint-up(md) {
+        width: 120px;
+        height: 120px;
+    }
+
+    @include media-breakpoint-up(lg) {
+
+        span {
+            font-size: 1.1rem;
+            white-space: nowrap;
+        }
+
+        &:hover,
+        &:active {
+            span {
+                font-size: 1rem;
+            }
+        }
+
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 130px;
+        height: 130px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        width: 160px;
+        height: 160px;
+    }
+
+}

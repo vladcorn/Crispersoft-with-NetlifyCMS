@@ -1,0 +1,19 @@
+.thanks-section {
+    .section-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        .title {
+            text-align: center;
+        }
+
+        .text-description {
+            span {
+                display: block;
+            }
+        }
+    }
+}

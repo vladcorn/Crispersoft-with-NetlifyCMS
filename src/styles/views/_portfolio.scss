@@ -1,0 +1,12 @@
+[data-page="portfolio"] {
+    .portfolio-section {
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .portfolio-slider {
+        @include media-breakpoint-up(lg) {
+            padding: 0 5%;
+        }
+    }
+}

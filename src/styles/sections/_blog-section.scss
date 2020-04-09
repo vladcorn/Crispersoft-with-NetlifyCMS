@@ -1,0 +1,31 @@
+.blog-section {
+
+    padding-bottom: 0 !important;
+
+
+    .section-body {
+        max-width: 670px;
+
+        margin: 0 auto;
+        margin-top: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            max-width: 1200px;
+        }
+    }
+
+    .list-blog {
+        display: grid;
+        margin-top: 0.5rem;
+
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: repeat(2, 1fr);
+
+            .item-blog {
+                &:nth-child(2n) {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}

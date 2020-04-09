@@ -1,0 +1,24 @@
+//abstracts
+@import 'abstracts/variables';
+@import 'abstracts/easings';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+@import 'abstracts/animations';
+
+//base
+@import 'base/reset';
+@import 'base/common';
+@import 'base/typography';
+
+//slick
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
+//components
+@import './components';
+
+//sections
+@import './sections';
+
+//views
+@import './views';

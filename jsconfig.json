@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "baseUrl": "./src",
+    "paths": {
+      "@images/*": ["./assets/images/*"],
+      "@api/*": ["./api/*"],
+      "@ui/*": ["./components/*"],
+      "@styles/*": ["./design-system/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@contexts/*": ["./contexts/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "public"]
+}

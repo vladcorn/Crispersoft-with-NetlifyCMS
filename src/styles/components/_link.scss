@@ -1,0 +1,41 @@
+.link {
+    display: flex;
+    align-items: center;
+
+    font-size: 1rem;
+    line-height: 19px;
+    letter-spacing: 0.05rem;
+
+    color: $secondary-color;
+
+    text-decoration: none;
+    // outline: none;
+
+    font-weight: normal;
+
+    @include media-breakpoint-up(xxl) {
+        font-size: 1.2rem;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.link-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .link-line {
+        display: inline-block;
+        width: 100px;
+        height: 2px;
+        margin-right: 20px;
+        background: $secondary-color;
+    }
+}

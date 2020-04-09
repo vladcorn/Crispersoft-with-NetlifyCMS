@@ -1,0 +1,80 @@
+.portfolio-slider {
+    position: relative;
+
+    .portfolio-card {
+        .card-image img {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        .title {
+            white-space: pre-line;
+        }
+    }
+
+    .btn-slick-next {
+        cursor: pointer;
+    }
+
+    .btn-circle {
+        position: absolute;
+        right: 10%;
+        bottom: 230px;
+    }
+
+    .link-wrapper {
+        .link {
+            padding: 15px;
+        }
+    }
+
+    .slick-controls {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 50px;
+        padding: 0 5px;
+
+        .slick-progress {
+            flex: 1;
+        }
+    }
+
+    .slick-progress {
+        position: relative;
+        margin-right: 20px;
+        color: $secondary-color;
+        opacity: 1;
+        text-transform: uppercase;
+        width: 100%;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: #fff;
+            opacity: 0.2;
+        }
+
+        progress {
+            position: absolute;
+            top: 1px;
+            height: 4px;
+            border: none;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .slick-controls {
+            width: 30%;
+        }
+
+        .btn-circle {
+            right: 15%;
+            bottom: -40px;
+        }
+    }
+}

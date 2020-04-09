@@ -1,0 +1,15 @@
+.head-section {
+    .head-info {
+        margin-top: 20px;
+
+        @include media-breakpoint-up(370px) {
+            margin-top: 100px;
+        }
+    }
+
+    &.background-line {
+        &::after {
+            background-position: 100% 50%;
+        }
+    }
+}

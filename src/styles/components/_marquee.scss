@@ -1,0 +1,27 @@
+.marquee {
+    position: relative;
+
+    height: 50px;
+    width: 100vw;
+
+    div {
+        position: absolute;
+        display: flex;
+        flex-wrap: nowrap;
+        backface-visibility: hidden;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &.right {
+        div {
+            animation: marquee-right 100s linear infinite;
+        }
+    }
+
+    &.left {
+        div {
+            animation: marquee-left 100s linear infinite;
+        }
+    }
+}

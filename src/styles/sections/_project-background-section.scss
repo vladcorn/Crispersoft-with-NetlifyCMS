@@ -1,0 +1,16 @@
+.project-background-section {
+    height: 350px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+
+    @include media-breakpoint-up(lg) {
+        min-height: 660px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        min-height: 880px;
+    }
+
+}

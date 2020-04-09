@@ -1,0 +1,69 @@
+.preloader {
+    font-family: $secondary-font-family;
+
+    opacity: 1;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: $primary-color;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    transition: all 0.5s ease;
+
+    &.hide {
+        opacity: 0;
+    }
+
+    .preloader-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 200px;
+        height: 130px;
+
+        color: #fff;
+
+        // background-color: gray;
+
+    }
+
+    .preloader-logo {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .logo {
+            &::before {
+                font-size: 3rem;
+            }
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .preloader-logo-name {
+        font-weight: 600;
+        font-size: 35px;
+        background: none;
+        margin-top: 10px;
+    }
+
+    .preloader-progress {
+        font-size: 14px;
+    }
+
+}

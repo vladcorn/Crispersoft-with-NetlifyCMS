@@ -1,0 +1,21 @@
+[data-page="cool-food"] {
+    .project-head-section {
+        background-color: #fff;
+
+        .project-head {
+            height: 100%;
+            position: relative;
+        }
+
+        .project-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            max-width: 580px;
+            width: 50%;
+            height: auto;
+        }
+    }
+}

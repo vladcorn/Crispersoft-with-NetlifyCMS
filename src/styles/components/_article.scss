@@ -1,0 +1,39 @@
+.article {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.3rem 0;
+
+    .article-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .article-header {
+        padding: 1.1rem 0;
+
+        .main-title {
+            max-width: none;
+        }
+    }
+
+    .article-date {
+        display: block;
+        margin-top: 1.1rem;
+    }
+
+    .article-body {
+        flex: 1 1 auto;
+    }
+
+    .article-image {
+        padding-top: $layout-spacing-lg;
+
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+
+
+}
