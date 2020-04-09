@@ -120,7 +120,7 @@ export const infoFluidImage = graphql`
 
 const infoFluidImageQuery = graphql`
   query InfoFluidImage {
-    image: file(relativePath: { eq: "team/team-main.jpg" }) {
+    image: file(relativePath: { eq: "team/team-main.png" }) {
       ...infoFluidImageFragment
     }
   }

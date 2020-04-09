@@ -43,7 +43,7 @@ const SectionAboutHead = () => {
 
 const infoFluidImageQuery = graphql`
   query InfoAboutFluidImage {
-    image: file(relativePath: { eq: "team/team-about.jpg" }) {
+    image: file(relativePath: { eq: "team/team-main.png" }) {
       ...infoFluidImageFragment
     }
   }
